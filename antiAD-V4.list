@@ -34551,7 +34551,7 @@ host-suffix,report.cms.qq.com,REJECT
 host-suffix,report.qq.com,REJECT
 host-suffix,rh.qq.com,REJECT
 host-suffix,rmpad.imtt.qq.com,REJECT
-host-suffix,rqd.qq.com,REJECT
+#host-suffix,rqd.qq.com,REJECT
 host-suffix,sdkconfig.video.qq.com,REJECT
 host-suffix,sdksp.video.qq.com,REJECT
 host-suffix,sec.video.qq.com,REJECT
