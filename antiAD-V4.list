@@ -2,6 +2,12 @@
 #VER=20210705024313
 #URL=https://github.com/privacy-protection-tools/anti-AD
 #TOTAL_LINES=48689
+
+host-suffix,cdn.ark.qq.com,REJECT
+#host-suffix,rqd.qq.com,REJECT
+#host-suffix,mdt.qq.com,REJECT
+
+
 host-suffix,00-gov.cn,REJECT
 host-suffix,kwcdn.000dn.com,REJECT
 host-suffix,kwcscdn.000dn.com,REJECT
@@ -34522,7 +34528,7 @@ host-suffix,market.m.qq.com,REJECT
 host-suffix,masdkv6.3g.qq.com,REJECT
 host-suffix,mcgi.v.qq.com,REJECT
 host-suffix,mdevstat.qqlive.qq.com,REJECT
-#host-suffix,mdt.qq.com,REJECT
+
 host-suffix,uu.qq.com,REJECT
 host-suffix,monitor.uu.qq.com,REJECT
 host-suffix,mta.qq.com,REJECT
@@ -34551,7 +34557,7 @@ host-suffix,report.cms.qq.com,REJECT
 host-suffix,report.qq.com,REJECT
 host-suffix,rh.qq.com,REJECT
 host-suffix,rmpad.imtt.qq.com,REJECT
-#host-suffix,rqd.qq.com,REJECT
+
 host-suffix,sdkconfig.video.qq.com,REJECT
 host-suffix,sdksp.video.qq.com,REJECT
 host-suffix,sec.video.qq.com,REJECT
@@ -34600,7 +34606,7 @@ host-suffix,c.l.qq.com,REJECT
 host-suffix,c2.l.qq.com,REJECT
 host-suffix,canvas.gdt.qq.com,REJECT
 host-suffix,cb.l.qq.com,REJECT
-#host-suffix,cdn.ark.qq.com,REJECT
+
 host-suffix,cfg.imtt.qq.com,REJECT
 host-suffix,client.show.qq.com,REJECT
 host-suffix,cm.e.qq.com,REJECT
