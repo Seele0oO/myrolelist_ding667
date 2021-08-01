@@ -7483,7 +7483,7 @@ host-suffix,appcdn.wapx.cn,REJECT
 host-suffix,appcdn.wapx.com,AdBlock
 host-suffix,appcdn.wapx.com,REJECT
 host-suffix,appchannel.html5.qq.com,REJECT
-host-suffix,appcloud2.in.zhihu.com,REJECT
+// host-suffix,appcloud2.in.zhihu.com,REJECT
 host-suffix,appcloud2.zhihu.com,REJECT
 host-suffix,appconsent.io,REJECT
 host-suffix,appcpa.co,REJECT
@@ -46183,7 +46183,7 @@ host-suffix,suedespadecomparatively.com,REJECT
 host-suffix,sueencumberpiggy.com,REJECT
 host-suffix,sufficient.cn,REJECT
 host-suffix,sugar.gameforge.com,REJECT
-host-suffix,sugar.zhihu.com,AdBlock
+// host-suffix,sugar.zhihu.com,AdBlock
 host-suffix,sugarcurtain.com,REJECT
 host-suffix,sugarpuff.net,REJECT
 host-suffix,sugodeku.com,REJECT
