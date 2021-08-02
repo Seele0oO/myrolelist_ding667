@@ -1,4 +1,4 @@
-hostname = *.zhihu.com,*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.m.jd.com
+hostname = *.zhihu.com,*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.m.jd.com,www.zhihu.com,api.zhihu.com,appcloud2.zhihu.com,zhuanlan.zhihu.com
 //知乎
 # 知乎处理用户信息
 ^https?:\/\/api\.zhihu\.com\/people\/ url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
@@ -101,7 +101,7 @@ https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key 
 
 // 显示京东历史价格
 // // [rewrite_local]
-// ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 // // [mitm]
 // hostname = api.m.jd.com
 
@@ -116,6 +116,6 @@ https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key 
 
 //京东
 // [rewrite_local]
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/5432000e25c2b0e23ba8c4f8e8efd496bdc56250/jd_price.js
+// ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/5432000e25c2b0e23ba8c4f8e8efd496bdc56250/jd_price.js
 // [mitm]
 // hostname = api.m.jd.com
