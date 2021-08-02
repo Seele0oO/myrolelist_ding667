@@ -31,7 +31,7 @@ hostname = *.zhihu.com,*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,
 # 知乎其他广告拦截
 ^https?:\/\/api\.zhihu\.com\/(notifications\/v3\/count|v3\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|.*featured-comment-ad) url reject-dict
 # 知乎拦截部分预加载
-# ^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription) url reject-dict
+^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription) url reject-dict
 # 知乎网页版去广告
 ^https?:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings url reject-dict
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation url reject-dict
