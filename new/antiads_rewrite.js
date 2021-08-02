@@ -99,9 +99,9 @@ hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
 ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
 
 // 显示京东历史价格
-// [rewrite_local]
+[rewrite_local]
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
-// [mitm]
+[mitm]
 hostname = api.m.jd.com
 
 
