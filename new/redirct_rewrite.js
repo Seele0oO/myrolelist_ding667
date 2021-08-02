@@ -1,8 +1,8 @@
-hostname = www.google.cn,api.abema.io,*.wikipedia.org,*.wikiwand.com
+// hostname = www.google.cn,api.abema.io,*.wikipedia.org,*.wikiwand.com
 
 # 重定向 Google 搜索服务
 # ^(http|https):\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
-hostname = www.google.com,www.google.com.*
+hostname = www.google.com,www.google.com.*,www.google.cn,api.abema.io,*.wikipedia.org,*.wikiwand.com
 
 (https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=strict&)(.+) url 302 $1&safe=off
 

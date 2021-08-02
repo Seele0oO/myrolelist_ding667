@@ -1,3 +1,4 @@
+hostname = *.zhihu.com,*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.m.jd.com
 //知乎
 # 知乎处理用户信息
 ^https?:\/\/api\.zhihu\.com\/people\/ url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
@@ -45,7 +46,7 @@
 ^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config url reject-200
 
 # hostname = www.zhihu.com,api.zhihu.com,appcloud2.zhihu.com,zhuanlan.zhihu.com
-hostname = *.zhihu.com
+// hostname = *.zhihu.com
 
 
 //bilibili
@@ -85,7 +86,7 @@ https://api.bilibili.com/x/v2/reply/main\?access_key url script-response-body ht
 https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key url script-response-body https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js
 
 
-hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
+// hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
 
 
 # 去微博应用内广告 (By yichahucha)
@@ -117,4 +118,4 @@ hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
 // [rewrite_local]
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/5432000e25c2b0e23ba8c4f8e8efd496bdc56250/jd_price.js
 // [mitm]
-hostname = api.m.jd.com
+// hostname = api.m.jd.com
