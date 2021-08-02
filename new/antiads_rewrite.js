@@ -115,6 +115,6 @@ hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
 
 //京东
 // [rewrite_local]
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body jd_price.js
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/5432000e25c2b0e23ba8c4f8e8efd496bdc56250/jd_price.js
 // [mitm]
 hostname = api.m.jd.com
