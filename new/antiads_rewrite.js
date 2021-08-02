@@ -98,4 +98,17 @@ hostname = *.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
 
+// 显示京东历史价格
+// [rewrite_local]
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+// [mitm]
+hostname = api.m.jd.com
 
+
+// 显示淘宝历史价格
+# 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
+// [rewrite_local]
+^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+// [mitm]
+hostname = trade-acs.m.taobao.com
