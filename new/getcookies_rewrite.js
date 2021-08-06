@@ -1,7 +1,7 @@
 
 // 京东自动签到
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-hostname = api.m.jd.com,music.163.com,clientaccess.10086.cn
+hostname = api.m.jd.com,music.163.com,clientaccess.10086.cn,e.189.cn
 
 //网易云音乐
 ^https:\/\/music.163.com\/weapi\/user\/level url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js
@@ -21,3 +21,9 @@ hostname = api.m.jd.com,music.163.com,clientaccess.10086.cn
 // hostname = api-takumi.mihoyo.com
 // ^https:\/\/api-takumi.mihoyo.com\/apihub\/api\/getGameList url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/mihoyo/mihoyo.cookie.js
 
+//中国电信
+// [mitm]
+// hostname = e.189.cn
+
+// [rewrite_local]
+^https?:\/\/e.189.cn\/store\/user\/package_detail.do url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
