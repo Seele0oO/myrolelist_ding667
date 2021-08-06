@@ -1,7 +1,7 @@
 
 // 京东自动签到
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-hostname = api.m.jd.com，music.163.com，
+hostname = api.m.jd.com,music.163.com
 
 //网易云音乐
 ^https:\/\/music.163.com\/weapi\/user\/level url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js
