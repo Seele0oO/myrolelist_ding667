@@ -3,3 +3,4 @@ src： https://github.com/sve1r/Rules-For-Quantumult-X/blob/develop/Rules/Advert
 
 基于这个修改
 
+测试github.dev能否修改文件
