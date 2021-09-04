@@ -26,4 +26,4 @@ hostname = api.m.jd.com,music.163.com,clientaccess.10086.cn,e.189.cn
 // hostname = e.189.cn
 
 // [rewrite_local]
-^https?:\/\/e.189.cn\/store\/user\/package_detail.do url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
+// ^https?:\/\/e.189.cn\/store\/user\/package_detail.do url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
